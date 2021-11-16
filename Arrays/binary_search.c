@@ -36,7 +36,6 @@ int main(){
   assert(binary_search(elements, 0, length, 2) == 0);
   assert(binary_search(elements, 0, length, 221) == 9);
   assert(binary_search(elements, 0, length, 34) == 6);
-  //  assert(binary_search(elements, 0, length, 8) == 1);
   int e[] = {2,3,4,5,6,7};
   assert(binary_search(e, 0, 1, 2) == 0);
   printf("%d", binary_search(e, 0, 6 ,7));
