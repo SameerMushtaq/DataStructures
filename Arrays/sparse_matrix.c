@@ -2,8 +2,6 @@
 #define ROWS 4
 #define COLS 4
 
-/*This C program is used to check if a matrix is a sparse Matrix. If the number of zeros in a matrix exceeds (ROWS*COLS)/2, where ROWS, COLS is the dimension of the matrix, matrix is sparse matrix. Sparse matrix has more zero elements than nonzero elements.
- */
 void findSparseMatrix(int matrix[ROWS][COLS]);
 
 int main(){
@@ -19,7 +17,7 @@ int main(){
   return 0;
 }
 
-void findSparseMatrix(int matrix[ROWS][COLS]){
+  void findSparseMatrix(int matrix[ROWS][COLS]){
   int sparse_counter = 0;
     for(int i = 0; i < ROWS; i++){
       for(int j = 0; j < COLS; j++){
