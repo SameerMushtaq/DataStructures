@@ -46,8 +46,5 @@ void stack_clear(Stack *stack) {
   stack->tos = 0;
 }
 int stack_count(Stack *stack){
-//	int count = 0;
-//	for(int i = 0; i < stack->tos; i++)
-//		count++;
 	return stack->tos;
 }
