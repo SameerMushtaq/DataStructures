@@ -34,9 +34,7 @@ void print_array(int xs[], size_t size) {
 int main(){
   int arr[] = {3, 1, 4, 0, 6};
   int sorted [] = {0, 1, 3, 4, 6};
-  
   int arr2[] = {9, 2, 7, 8};
-  
   int sorted2 [] = {2, 7, 8, 9};
   
   int size = sizeof arr / sizeof arr[0];
@@ -52,7 +50,6 @@ int main(){
 
   int two_arr[] = {2, 1};
   int a1[] = {1, 2};
-
   insertion_sort(two_arr, 2);
   print_array(two_arr, 2);
   assert(array_equals(two_arr, a1, 2));
