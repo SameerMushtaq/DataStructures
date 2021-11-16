@@ -16,13 +16,10 @@ int main(void){
   Stack* stack = &s;
   StackEntry a[] = {'a', 'b', 'c', 'd', 'e', '\0'};
 
-  //initialize the stack
   stack_init(stack);
 
-  //make sure its empty  
   assert(stack_is_empty(stack));
-
-  //push the values into the stack
+   
   for(int i = 0; a[i] != '\0'; i++)
     stack_push(stack, a[i]);
   
@@ -30,7 +27,6 @@ int main(void){
   assert(!stack_is_empty(stack));
   stack_debug(stack);
 
-  // pop value and print it
   pop_and_print(stack);
 
   return 0;
