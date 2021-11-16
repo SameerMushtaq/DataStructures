@@ -46,10 +46,6 @@ DoubleNode* dll_find(DoubleNode *head, data value) {
 }
 
 DoubleNode* dll_delete_node(DoubleNode *head, DoubleNode *node){
-  // We don't need head to delete a node but in case
-  // the node to deleted is the head, the code will get
-  // into trouble. So, we make sure we return a valid
-  // head.
   if(node){
     DoubleNode *prev = node->prev;
     if (prev)
